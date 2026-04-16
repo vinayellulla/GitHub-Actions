@@ -25,7 +25,7 @@ jobs:
         - name: configure AWS credentials
           uses: aws-actions/configure-aws-credentials@v4
           with:
-            role-to-assume: arn:aws:iam::666531394927:role/service-role/s3crr_role_for_strac-123
+            role-to-assume: arn:aws:iam::666531394927:role/GitHub-runners
             aws-region: ap-southeast-2
             
         - name: Terraform Setup

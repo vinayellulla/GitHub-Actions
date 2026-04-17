@@ -9,7 +9,7 @@ resource "random_string" "example" {
 }
 
 resource "aws_s3_bucket" "my-bucket" {
-  bucket = "vinayellulla-${random_string.example.result}"
+  bucket = "vinayellulla-${random_string.example.result}-var.s3_bucket"
 
   tags = {
     Name        = "My Bucket"

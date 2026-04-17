@@ -11,6 +11,8 @@ permissions:
       contents: read
 
 jobs:
+   call-workflow-passing-data:
+      uses: vinayellulla/GitHub-Actions/.github/workflows/automate_readMe.yml@main
    terraform:
       name: Terraform script
       runs-on: ubuntu-latest

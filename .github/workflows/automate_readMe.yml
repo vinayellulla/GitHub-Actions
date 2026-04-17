@@ -3,9 +3,7 @@ on:
   push:
     branches: [ "main" ]
   workflow_dispatch: 
-
-# on:
-#   workflow_call:
+  workflow_call:
 
 permissions:
   repository-projects: write
